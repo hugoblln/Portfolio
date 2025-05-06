@@ -244,17 +244,10 @@
         .about-img {
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform var(--transition-speed), box-shadow var(--transition-speed);
         }
 
-        .about-img:hover {
-            transform: translateY(-10px) rotate(2deg);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-
         .about-img img {
-            width: 100%;
             height: auto;
             display: block;
             transition: transform var(--transition-speed);
@@ -381,12 +374,12 @@
         .project-img {
             height: 200px;
             overflow: hidden;
+            background: var(--light-color);
         }
 
         .project-img img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
             transition: transform var(--transition-speed);
         }
 
@@ -764,7 +757,7 @@
             <h2 class="section-title" data-aos="fade-up">À propos de moi</h2>
             <div class="about-content">
                 <div class="about-img" data-aos="fade-right" data-aos-delay="200">
-                    <img src="/api/placeholder/400/320" alt="Photo de profil">
+                    <img src="./img/photoHugo.png" alt="Photo de profil">
                 </div>
                 <div class="about-text" data-aos="fade-left" data-aos-delay="400">
                     <h3>Qui suis-je ?</h3>
@@ -847,7 +840,7 @@
                      data-project-description="Automatisation de tâches d'une plateforme d'administration dans le cadre de mon stage chez Praxis Consulting. J'ai développé des solutions pour optimiser les workflows administratifs, réduire le temps de traitement et améliorer l'expérience utilisateur. Le projet a permis d'augmenter l'efficacité opérationnelle de 40%."
                      data-project-tags="Vue.js, PHP, MySQL, Docker">
                     <div class="project-img">
-                        <img src="/api/placeholder/400/320" alt="Projet 2">
+                        <img src="./img/test_logo.png" alt="Projet 2">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Plateforme d'administration</h3>
@@ -863,12 +856,12 @@
 
                 <!-- Project 3 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300"
-                     data-project-img="/api/placeholder/800/600"
+                     data-project-img="./img/logi.png.web.480.480.webp"
                      data-project-title="Création API REST" 
                      data-project-description="Création d'une API REST et du Back End d'une plateforme de gestion de différents Data Center dans le cadre de ma mission chez XEFI/NEXEREN. Cette API sécurisée permet de gérer efficacement les ressources distribuées sur plusieurs centres de données, offrant une interface unifiée pour la surveillance, la configuration et la gestion des ressources informatiques."
                      data-project-tags="PHP, Laravel, ElasticSearch, MySql, Rest-Api Lomkit">
                     <div class="project-img">
-                        <img src="./img/logi.png.web.480.480.webp" alt="Projet 3">
+                        <img src="./img/logi.png.web.480.480.webp" width="100px" alt="Projet 3">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Création API REST</h3>
@@ -893,7 +886,7 @@
                 <i class="fas fa-times"></i>
             </button>
             <div class="modal-header">
-                <img id="modalImage" src="/api/placeholder/800/600" alt="Project image">
+                <img id="modalImage" src="./img/test_logo.png" alt="Project image">
             </div>
             <div class="modal-content">
                 <h2 class="modal-title" id="modalTitle">Titre du projet</h2>
